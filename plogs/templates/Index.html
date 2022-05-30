@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>index</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--导航条-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">您正在浏览一个导航条</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">一个不善言辞的羞涩男孩</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="Index.html">Home<span class="sr-only">(current)</span></a></li>
+                <li><a href="Logs">Logs</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" class="disabled"><a href="">Detail</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--巨幕-->
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-offset-1">
+            <h1>THIS IS {{ Name }}</h1>
+            <address>
+                <strong>School</strong><br>
+                <abbr></abbr>{{ school }}
+            </address>
+            <address>
+                <strong>Major</strong><br>
+                <abbr></abbr>{{ major }}
+            </address>
+            <address>
+                <strong>Contact</strong><br>
+                <a href="mailto:#">{{ mail }}</a>
+            </address>
+            <p><a class="btn btn-primary btn-lg" href="/detail/Avatar/{{ id }}" role="button">More</a></p>
+
+        </div>
+    </div>
+</div>
+
+<!--友情链接-->
+<div class="row">
+    <!-- 居中 text-center -->
+    <div class="col-xs-12 text-center">
+        <ul class="list-inline">
+            <li><a href="">友情链接</a></li>
+            <li><a href="https://mirrors.tuna.tsinghua.edu.cn/">TUNA</a></li>
+            <li><a href="https://www.csdn.net/">CSDN</a></li>
+            <li><a href="https://github.com/">Github</a></li>
+            <li><a href="https://gitee.com/explore">Gitee</a></li>
+            <li><a href="https://v3.bootcss.com/">Bootstrap</a></li>
+            <li><a href="https://www.mysql.com/">MySQL</a></li>
+            <li><a href="https://www.django.cn/">Django</a></li>
+            <li><a href="https://www.navicat.com.cn/">Navicat</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--版权所有-->
+<div class="row">
+    <div class="col-xs-12 text-center">
+        Copyright © 2022 Dr_NANA 版权所有
+    </div>
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../../static/js/jQuery.js">
+    <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../../static/js/bootstrap.js">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+</body>
+</html>
+
